@@ -1,0 +1,45 @@
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"POST /buddy - success"}
+{"level":"info","message":"DELETE /buddy/123 - success"}
+{"level":"info","message":"POST /buddy - success"}
+{"level":"warn","message":"DELETE /buddy/12 - not found"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddy/123 - success"}
+{"level":"error","message":"GET /buddy/123 - Unexpected token ] in JSON at position 80"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddy/123 - success"}
+{"level":"warn","message":"GET /buddy/12 - not found"}
+{"level":"info","message":"GET /buddy/123 - success"}
+{"level":"info","message":"POST /buddy - success"}
+{"level":"info","message":"PUT /buddy/125 - success"}
+{"level":"info","message":"POST /buddy - success"}
+{"level":"info","message":"DELETE /buddy/126 - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddy/125 - success"}
+{"level":"warn","message":"GET /buddy/126 - not found"}
+{"level":"warn","message":"GET /buddy/126 - not found"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"POST /buddy - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddy/130 - success"}
+{"level":"warn","message":"GET /buddy/13 - not found"}
+{"level":"warn","message":"GET /buddy/aegv - not found"}
+{"level":"warn","message":"GET /buddy/12 - not found"}
+{"level":"info","message":"PUT /buddy/130 - success"}
+{"level":"info","message":"PUT /buddy/130 - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"DELETE /buddy/125 - success"}
+{"level":"warn","message":"DELETE /buddy/1254 - not found"}
+{"level":"warn","message":"DELETE /buddy/eafrsf - not found"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddy/130 - success"}
+{"level":"warn","message":"GET /buddy/1304 - not found"}
