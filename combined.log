@@ -43,3 +43,19 @@
 {"level":"info","message":"GET /buddies - success"}
 {"level":"info","message":"GET /buddy/130 - success"}
 {"level":"warn","message":"GET /buddy/1304 - not found"}
+{"level":"warn","message":"GET /buddy/read - not found"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"error","message":"GET /buddies - err is not defined"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"Example app listening on port 3201!"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies in controllers - success"}
+{"level":"info","message":"PUT /buddy/130 - success"}
+{"level":"info","message":"PUT /buddy/130 - success in controllers"}
+{"level":"info","message":"Example app listening on port 3201!"}
+{"level":"info","message":"POST /buddy - success in controllers"}
+{"level":"info","message":"GET /buddies - success"}
+{"level":"info","message":"GET /buddies in controllers - success"}

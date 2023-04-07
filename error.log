@@ -1,1 +1,2 @@
 {"level":"error","message":"GET /buddy/123 - Unexpected token ] in JSON at position 80"}
+{"level":"error","message":"GET /buddies - err is not defined"}

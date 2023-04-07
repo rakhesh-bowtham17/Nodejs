@@ -1,21 +1,12 @@
 const express = require('express');
-const fs = require('fs');
-const winston = require('winston');
 const helpfunction = require('../utils/util')
+const loggerfunction = require('../logger.js')
 const app = express();
 app.use(express.json());
 
 const filePath = './cdw_ace23_buddies.json';
 
-const logger = winston.createLogger({
-    level: process.env.LOGGER_LEVEL || 'info',
-    format: winston.format.json(),
-    transports: [
-        new winston.transports.File({ filename: 'error.log', level: 'error' }),
-        new winston.transports.File({ filename: 'combined.log' }),
-        new winston.transports.Console({ format: winston.format.simple() })
-    ]
-});
+const logger = loggerfunction.log();
 
 const getUsers = () => {
     try {
@@ -24,7 +15,10 @@ const getUsers = () => {
         return buddies;
     } catch (error) {
         logger.error(`GET /buddies - ${error.message}`);
-        return helpfunction.errormessage("internalservererror");
+        return {
+            error: error.message,
+            type : helpfunction.errormessage("internalservererror")
+        }
     }
 }
 const getUsersById = (req, res) => {
@@ -40,7 +34,10 @@ const getUsersById = (req, res) => {
         }
     } catch (error) {
         logger.error(`GET /buddy/${req.params.id} - ${error.message}`);
-        return helpfunction.errormessage("internalservererror");
+        return {
+            error: error.message,
+            type : helpfunction.errormessage("internalservererror")
+        }
     }
 }
 const postUser = (req, res) => {
@@ -48,13 +45,19 @@ const postUser = (req, res) => {
         const buddies = helpfunction.readFile(filePath);
         const buddy = buddies.find(b => b.employeeId === req.params.id || b.realName === req.params.id);
         if(buddy){
-            return helpfunction.errormessage("useralreadythere");
+            return {
+                error: "user already exits error",
+                type: helpfunction.errormessage("useralreadythere")
+            }
         }
         else{
             if(req.params.id === req.body.employeeId || req.params.id === req.body.realName){
             }
             else{
-                return helpfunction.errormessage("entercorrectdetails");
+                return {
+                    error: "enter the correct details",
+                    type: helpfunction.errormessage("entercorrectdetails")
+                }
             }
         }
         const newBuddy = req.body;
@@ -64,7 +67,10 @@ const postUser = (req, res) => {
         logger.info('POST /buddy - success');
     } catch (error) {
         logger.error(`POST /buddy - ${error.message}`);
-        return helpfunction.errormessage("internalservererror");
+        return {
+            error: error.message,
+            type : helpfunction.errormessage("internalservererror")
+        }
     }
 }
 const putUser = (req, res) => {
@@ -84,7 +90,10 @@ const putUser = (req, res) => {
     }
     catch (error) {
         logger.error(`PUT /buddy/${req.params.id} - ${error.message}`);
-        return helpfunction.errormessage("internalservererror");
+        return {
+            error: error.message,
+            type : helpfunction.errormessage("internalservererror")
+        }
     }
 }
 const deleteUser = (req, res) => {
@@ -102,7 +111,10 @@ const deleteUser = (req, res) => {
         }
     } catch (error) {
         logger.error(`DELETE /buddy/${req.params.id} - ${error.message}`);
-        return helpfunction.errormessage("internalservererror");
+        return {
+            error: error.message,
+            type : helpfunction.errormessage("internalservererror")
+        }
     }
 }
 module.exports = {
