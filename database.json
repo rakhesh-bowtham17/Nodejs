@@ -1,0 +1,26 @@
+[
+    {
+        "username": "Optimus",
+        "hashedPassword": "$2b$10$776jp.AVcQeJvbE.rOBd..rn7WSXxVs8BslNZCOs0ToNDrzAxQOC6"
+    },
+    {
+        "username": "Bowtham",
+        "hashedPassword": "$2b$10$HckK7FRgHlXQuyM7k6ratunz/WX1DMflVvqCgnLCb4Xk0gPbq5o5C"
+    },
+    {
+        "username": "Rakhesh",
+        "hashedPassword": "$2b$10$CQ7oHl/GL24X.SQ9OMvxt.2fNfhWbfB8v9wfcWAHNXzbM5p6B0dF."
+    },
+    {
+        "username": "testuser",
+        "hashedPassword": "$2b$10$xEV2EO478hACYAu/q02do.5bAl7tpeo3Ttu3FLt3P/nnF.pTF.Et."
+    },
+    {
+        "username": "newuser",
+        "hashedPassword": "$2b$10$GXtz4UkX9nj77.ZtkqBuXuhdjX7BQEgQSfQ5aFXkt5RHyaDdnS0LO"
+    },
+    {
+        "username": "testuser",
+        "hashedPassword": "$2b$10$YdLBOuCCQRIhY6.nbShTEOmvZbMn2BlAumMJHAJTxR1A8oVCdHsnm"
+    }
+]
